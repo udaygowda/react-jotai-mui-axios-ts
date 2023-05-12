@@ -6,7 +6,6 @@ import { Provider } from 'jotai';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from 'reportWebVitals';
-import theme from 'theme';
 
 import './styles/index.scss';
 
@@ -14,7 +13,7 @@ const root = createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   //<StrictMode>
-  <ThemeProvider theme={theme}>
+  <ThemeProvider>
     <CssBaseline />
     <BrowserRouter>
       <Provider>
